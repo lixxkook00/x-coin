@@ -1,0 +1,138 @@
+<!-- STAKING PACK -->
+    <section class="pack">
+        <div class="centering">
+            <div class="primary-title">
+                STACKING PACK
+                <div class="primary-title-line">
+                    <img src="./assets/images/logo.png" alt="" class="primary-title-logo">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="centering">
+                <div class="pack-desc text-center">
+                    Laborum velit aliquip magna non est amet excepteur culpa. Cillum sit nostrud officia qui et amet
+                    pariatur proident amet. Nisi non anim aliqua est eu id anim aute officia sit labore.
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="pack-card">
+                        <img src="./assets/images/ethereum.png" alt="" class="pack-card-icon">
+
+                        <div class="pack-card-name">
+                            Ethereum
+                        </div>
+
+                        <div class="pack-card-content">
+                            Stake any amount of ETH and earn daily staking rewards.Stake any amount of ETH and earn
+                            daily staking rewards.
+                        </div>
+
+                        <div class="pack-card-wrapper d-flex justify-content-center">
+                            <div class="pack-card-item">
+                                <div class="pack-card-value">
+                                    100%
+                                </div>
+                                <div class="pack-card-text">
+                                    APR
+                                </div>
+                            </div>
+
+                            <div class="pack-card-item">
+                                <div class="pack-card-value">
+                                    $5,912,137,689
+                                </div>
+                                <div class="pack-card-text">
+                                    STAKED
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pack-card-button border-gradient border-gradient-purple">
+                            STAKING NOW
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="pack-card">
+                        <img src="./assets/images/ethereum.png" alt="" class="pack-card-icon">
+
+                        <div class="pack-card-name">
+                            Ethereum
+                        </div>
+
+                        <div class="pack-card-content">
+                            Stake any amount of ETH and earn daily staking rewards.Stake any amount of ETH and earn
+                            daily staking rewards.
+                        </div>
+
+                        <div class="pack-card-wrapper d-flex justify-content-center">
+                            <div class="pack-card-item">
+                                <div class="pack-card-value">
+                                    100%
+                                </div>
+                                <div class="pack-card-text">
+                                    APR
+                                </div>
+                            </div>
+
+                            <div class="pack-card-item">
+                                <div class="pack-card-value">
+                                    $5,912,137,689
+                                </div>
+                                <div class="pack-card-text">
+                                    STAKED
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pack-card-button border-gradient border-gradient-purple">
+                            STAKING NOW
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="pack-card">
+                        <img src="./assets/images/ethereum.png" alt="" class="pack-card-icon">
+
+                        <div class="pack-card-name">
+                            Ethereum
+                        </div>
+
+                        <div class="pack-card-content">
+                            Stake any amount of ETH and earn daily staking rewards.Stake any amount of ETH and earn
+                            daily staking rewards.
+                        </div>
+
+                        <div class="pack-card-wrapper d-flex justify-content-center">
+                            <div class="pack-card-item">
+                                <div class="pack-card-value">
+                                    100%
+                                </div>
+                                <div class="pack-card-text">
+                                    APR
+                                </div>
+                            </div>
+
+                            <div class="pack-card-item">
+                                <div class="pack-card-value">
+                                    $5,912,137,689
+                                </div>
+                                <div class="pack-card-text">
+                                    STAKED
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pack-card-button border-gradient border-gradient-purple">
+                            STAKING NOW
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
