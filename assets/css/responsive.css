@@ -57,6 +57,10 @@
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
+    .grid-m-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .centering-mobile{
         display: flex !important;
         align-items: center !important;
@@ -272,12 +276,12 @@
     }
 
     .intro-item-text{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .intro-item-value {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 24px;
     }
 
     .intro-item-value i {
@@ -286,6 +290,10 @@
 
     .intro .col-4{
         padding: 4px;
+    }
+
+    .workflow .swiper {
+        padding-top: 0px !important;
     }
 }
 

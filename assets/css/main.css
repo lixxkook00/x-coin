@@ -284,7 +284,6 @@
 /* FEEDBACK */
 .feedback{
 	padding: 70px 0 25px;
-	background: url(../images/feedback-bg.png) no-repeat top center;
 	background-size: 100% auto;
 }
 
@@ -687,13 +686,11 @@ input:focus-visible{
 .footer-social-icon{
   height: 50px;
   width: 50px;
-
   border-radius: 50%;
   background-image: linear-gradient(45deg, #03C75E 0%, #036630 33%, #036630 100%);
-
   color: #fff;
-
   font-size: 25px;
+  cursor: pointer;
 }
 
 .footer-social-icon:not(:last-child){
@@ -1423,3 +1420,48 @@ select:focus-visible{
     font-weight: 800;
     margin-top: 10px;
 }
+
+
+
+/* ------- */
+.login .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.775rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #00AB00;
+    background-color: #ffffff40;
+    background-clip: padding-box;
+    border: 1px solid #e4e6ef;
+    appearance: none;
+    border-radius: 0.95rem;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+} 
+
+.login .primary-button {
+    max-width: unset;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -355,7 +355,7 @@
 
       const finalPercent = distance/(screen.width/2) 
       gui.__controllers[5].setValue(finalPercent*2500)
-      console.log(finalPercent*100); 
+      // console.log(finalPercent*100); 
     }
   };
 

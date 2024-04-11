@@ -238,7 +238,7 @@ a:hover{
 
 
 .header-mobile-logo{
- width: 80px;
+ width: 100px;
 }
 
 .header-mobile-right{
@@ -468,4 +468,5 @@ a:hover{
 .nft-img {
   border-radius: 20px;
   overflow: hidden;
+  border: 3px solid #9EDCEF;
 }

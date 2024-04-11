@@ -45,20 +45,20 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
 window.addEventListener('load', (event) => {
   bind1('.loading').style.display = "none"
 
-  animateNumber(6186056420, 2000, 0, function(number) {
-    const formattedNumber = number.toLocaleString()
-    document.getElementById('total-staking').innerText = '$' + formattedNumber;
-  })
+  // animateNumber(6186056420, 2000, 0, function(number) {
+  //   const formattedNumber = number.toLocaleString()
+  //   document.getElementById('total-staking').innerText = '$' + formattedNumber;
+  // })
 
   animateNumber(1374016, 1000, 0, function(number) {
     // const formattedNumber = number.toLocaleString()
     document.getElementById('stakers').innerText = number;
   })
 
-  animateNumber(6186056420, 2000, 0, function(number) {
-    const formattedNumber = number.toLocaleString()
-    document.getElementById('total-rewards').innerText = '$' + formattedNumber;
-  })
+  // animateNumber(6186056420, 2000, 0, function(number) {
+  //   const formattedNumber = number.toLocaleString()
+  //   document.getElementById('total-rewards').innerText = '$' + formattedNumber;
+  // })
 });
 
 // handle animation on scroll
