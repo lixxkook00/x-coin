@@ -271,15 +271,19 @@
                 </div>
 
                 <div class="col-xl-8 col-lg-12">
-                    <div class="primary-box primary-box--black d-flex flex-column justify-content-between col-fit-height">
+                    <div class="primary-box primary-box--black d-flex flex-column justify-content-between col-fit-height table-mh">
                         <div class="d-flex justify-content-between mb-7">
                             <a href="#" class="primary-text primary-title mb-1">Member Statistics</a>
 
                             <button type="submit" class="primary-button text-white">View members</button>
                         </div>
+
+                        <div class="dashboard-balance-value dashboard-balance-value-large text-center mt-4 mb-4 flex-1 centering text-gray">
+                            No transaction to display
+                        </div>
                         
                         <div class="centering mt-4">
-                            <button type="submit" class="primary-button text-white">Referral Link</button>
+                            <button type="submit" class="primary-button text-white" data-toggle="modal" data-target="#referralModal">Referral Link</button>
                         </div>
                     </div>
                 </div>
@@ -328,6 +332,35 @@
             Copyright © X-Coin | Designed by X-Coin Team.
         </div>
     </footer>
+
+    <!-- Referral Modal -->
+    <div class="modal fade" id="referralModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="primary-modal">
+                 <div class="primary-modal-header">
+                    <div class="primary-modal-title">
+                        Referral Link
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                 </div>
+                 <div class="primary-modal-content">
+                    <div class="primary-modal-text mb-2">
+                        Copy this link and share to your friends
+                    </div>
+                    <div class="d-flex">
+                        <input type="text" class="primary-modal-input mr-1" placeholder="" value="http://xcoin4m.com/ref/kanyeX">
+                        <div class="primary-button">
+                            <div class="text-center"><i class="fa-regular fa-copy ml-1 mr-1"></i> Copy link</div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

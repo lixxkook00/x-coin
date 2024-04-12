@@ -75,7 +75,8 @@ html,body{
   background-color: #000F07;
   color: #fff;
   overflow-x: hidden;
-  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
+  font-family: 'Space Grotesk';
 }
 
 .soft-menu__item a{
@@ -483,4 +484,17 @@ html::-webkit-scrollbar {
 html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.text-gray {
+  color: hsla(0, 0%, 41%, 0.647);
+}
+
+button:focus {
+  outline: none;
+  outline: none;
+}
+
+.primary-box-cursor {
+  cursor: pointer;
 }

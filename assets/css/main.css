@@ -747,6 +747,10 @@ input:focus-visible{
     min-height: 100vh;
 }
 
+.dashboard-bg {
+    background: #000 url(../images/bg-main.jpg) no-repeat center center;
+}
+
 .form-logo{
     height: 60px;
     width: auto;
@@ -903,7 +907,7 @@ input:focus-visible{
 }
 
 .primary-box{
-    background-color: #fff;
+    background-color: #fffffff0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
     border-radius: 15px;
@@ -1520,14 +1524,11 @@ select:focus-visible{
     bottom: 0;
     left: 0;
     width: 100vw;
-
     display: flex;
     align-items: center;
-    background-color: #fff;
-
-    color: #000;
-
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
+    background-color: #000F07;
+    color: #fff;
+    box-shadow: rgb(255 255 255 / 30%) 0px 1px 3px, rgb(255 255 255 / 30%) 0px 1px 2px;
 }
 
 .nav-mobile-item.active {
@@ -1644,6 +1645,57 @@ select {
 
 .gap-y-0 {
     gap: 0 10px;
+}
+
+.modal-content,
+.primary-modal {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #fff;
+    border: 2px solid #00c95b !important;
+    background: #000 url(../images/modal-bg.jpg) no-repeat center center;
+}
+
+.primary-modal .close {
+    color: #00ff73;
+}
+
+.primary-modal .primary-button {
+    padding: 6px;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.primary-modal-header {
+    border-bottom: 2px solid #00c95b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.primary-modal-title {
+    font-weight: 800;
+    font-size: 20px;
+}
+.primary-modal-content {
+    padding: 20px;
+}
+.primary-modal-text {
+
+}
+.primary-modal-input {
+    height: 40px;
+    padding: 4px 8px;
+    border: none;
+    background-color: #03663042;
+    border-radius: 10px;
+    flex: 1;
+    color: #ffffffbb;
 }
 
 
