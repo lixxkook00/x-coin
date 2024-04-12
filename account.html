@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
-    <title>Transaction</title>
+    <title>Account</title>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -44,13 +44,13 @@
                 <a href="/transaction.html" class="header-nav-item centering">
                     Transaction
                 </a>
-                <a href="/nft.html" class="header-nav-item centering active">
+                <a href="/nft.html" class="header-nav-item centering ">
                     Buy NFT
                 </a>
                 <a href="/stake.html" class="header-nav-item centering">
                     Stake
                 </a>
-                <a href="/account.html" class="header-nav-item centering">
+                <a href="/account.html" class="header-nav-item centering active">
                     Account
                 </a>
                 <div class="dropdown show">
@@ -72,31 +72,79 @@
     <div class="dashboard-bg">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="grid grid-2 primary-box primary-box--black w-100">
-                        <div class="token-infor">
-                            <div class="centering">
-                                <img src="./assets/images/usdtlogo.png" alt="" class="token-img">
+                <div class="col-xl-3 col-6 col-fit-height">
+                    <a href="#todeposit" class="primary-box primary-box--black d-flex flex-column primary-box--gradient">
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="card-icon mb-3">
+                                <i class="fa-solid fa-network-wired"></i>
                             </div>
     
-                            <div class="dashboard-balance-value dashboard-balance-value-large text-center mb-2">
-                                99,999.00 USD
+                            <div class="dashboard-balance-value dashboard-balance-value-large text-center text-lg mb-2">
+                                10,000.00 USD
                             </div>
                             <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                USD Balance
+                                Sales Network
                             </div>
                         </div>
-    
-                        <div class="token-infor">
-                            <div class="centering">
-                                <img src="./assets/images/logo.png" alt="" class="token-img">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-6 col-fit-height">
+                    <a href="#todeposit" class="primary-box primary-box--black d-flex flex-column primary-box--gold">
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="card-icon card-icon--gold mb-3">
+                                <i class="fa-solid fa-users"></i>
                             </div>
     
-                            <div class="dashboard-balance-value dashboard-balance-value-large text-center mb-2">
-                                100,000.00 XCO
+                            <div class="dashboard-balance-value dashboard-balance-value-large text-center text-lg mb-2">
+                                69
                             </div>
                             <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                XCO Balance
+                                Referral
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-6 col-12">
+                    <div class="grid grid-2 grid-m-1 gap-y-0">
+                        <div class="primary-box primary-box--black pd-15 d-flex flex-column">
+                            <div class="d-flex align-items-center">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                </div>
+                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                    Referral Link
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary-box primary-box--black pd-15 d-flex flex-column">
+                            <div class="d-flex align-items-center">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                    Change Password
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary-box primary-box--black pd-15 d-flex flex-column">
+                            <div class="d-flex align-items-center">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-user-lock"></i>
+                                </div>
+                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                    Two-Factor Authentication
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary-box primary-box--black pd-15 d-flex flex-column">
+                            <div class="d-flex align-items-center">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-user-shield"></i>
+                                </div>
+                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                    Verify Account
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -105,68 +153,26 @@
 
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="primary-box primary-box--gray primary-box--black d-flex flex-column justify-content-between col-fit-height">
+                    <div class="primary-box primary-box--black d-flex flex-column justify-content-between col-fit-height">
                         <div class="d-flex justify-content-between mb-7">
-                            <a href="#" class="primary-text primary-title mb-1">NFT</a>
+                            <a href="#" class="primary-text primary-title mb-1">Members</a>
+
+                            <select name="coin" id="coin">
+                                <option value="volvo">Referral</option>
+                                <option value="saab">All</option>
+                                <option value="saab">Tree view</option>
+                            </select>
                         </div>
 
-                        <div class="grid grid-4 grid-m-2">
-                            <div class="nft-card">
-                                <img src="/assets/images/nft-1.jpg" alt="" class="card-img">
-
-                                <div class="nft-card-button centering">
-                                    <button type="submit" class="primary-button w-100 text-white">Buy NFT</button>
-                                </div>
-                            </div>
-                            <div class="nft-card">
-                                <img src="/assets/images/nft-2.jpg" alt="" class="card-img">
-
-                                <div class="nft-card-button centering">
-                                    <button type="submit" class="primary-button w-100 text-white">Buy NFT</button>
-                                </div>
-                            </div>
-                            <div class="nft-card">
-                                <img src="/assets/images/nft-3.jpg" alt="" class="card-img">
-
-                                <div class="nft-card-button centering">
-                                    <button type="submit" class="primary-button w-100 text-white">Buy NFT</button>
-                                </div>
-                            </div>
-                            <div class="nft-card">
-                                <img src="/assets/images/nft-4.jpg" alt="" class="card-img">
-
-                                <div class="nft-card-button centering">
-                                    <button type="submit" class="primary-button w-100 text-white">Buy NFT</button>
-                                </div>
-                            </div>
-                            <div class="nft-card">
-                                <img src="/assets/images/nft-5.jpg" alt="" class="card-img">
-
-                                <div class="nft-card-button centering">
-                                    <button type="submit" class="primary-button w-100 text-white">Buy NFT</button>
-                                </div>
-                            </div>
-                            <div class="nft-card">
-                                <img src="/assets/images/nft-6.jpg" alt="" class="card-img">
-
-                                <div class="nft-card-button centering">
-                                    <button type="submit" class="primary-button w-100 text-white">Buy NFT</button>
-                                </div>
-                            </div>
-                            <div class="nft-card">
-                                <img src="/assets/images/nft-7.jpg" alt="" class="card-img">
-
-                                <div class="nft-card-button centering">
-                                    <button type="submit" class="primary-button w-100 text-white">Buy NFT</button>
-                                </div>
-                            </div>
-                            <div class="nft-card">
-                                <img src="/assets/images/nft-8.jpg" alt="" class="card-img">
-
-                                <div class="nft-card-button centering">
-                                    <button type="submit" class="primary-button w-100 text-white">Buy NFT</button>
-                                </div>
-                            </div>
+                        <div class="dashboard-balance-value dashboard-balance-value-large dashboard-balance-title text-center mt-2 mb-1">
+                            No members have joined your group yet
+                        </div>
+                        <div class="dashboard-balance-value dashboard-balance-value-large dashboard-balance-title text-center mb-2">
+                            Share Your Link to increase income
+                        </div>
+                        
+                        <div class="centering mt-4">
+                            <button type="submit" class="primary-button text-white text-sm">Referral Link</button>
                         </div>
                     </div>
                 </div>
@@ -189,7 +195,7 @@
             </div>
             <div class="nav-mobile-item-title">Transaction</div>
         </a>
-        <a href="/nft.html" class="nav-mobile-item active">
+        <a href="/nft.html" class="nav-mobile-item">
             <div class="nav-mobile-item-icon">
                 <i class="fa-solid fa-image"></i>
             </div>
@@ -201,7 +207,7 @@
             </div>
             <div class="nav-mobile-item-title">Stake</div>
         </a>
-        <a href="/account.html" class="nav-mobile-item">
+        <a href="/account.html" class="nav-mobile-item active">
             <div class="nav-mobile-item-icon">
                 <i class="fa-solid fa-user"></i>
             </div>

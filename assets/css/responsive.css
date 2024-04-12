@@ -295,6 +295,24 @@
     .workflow .swiper {
         padding-top: 0px !important;
     }
+
+    .card-icon-xl {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+
+    .dashboard-title {
+        margin-top: 5px;
+    }
+
+    .token-img {
+        width: 50px;
+    }
+    
+    .dashboard-balance-value.dashboard-balance-value-large.text-right {
+        text-align: left !important;
+    }
 }
 
 

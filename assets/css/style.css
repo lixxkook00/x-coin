@@ -1,52 +1,4 @@
 @font-face {
-  font-family: 'Aristotelica Display';
-  src: url("../fonts/Zetafonts - Aristotelica Pro Display Extralight.otf") format("truetype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Aristotelica CND';
-  src: url("../fonts/Zetafonts - AristotelicaPro CndText Extralight.otf") format("truetype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Aristotelica';
-  src: url("../fonts/Zetafonts - Aristotelica Pro Text Extralight.otf") format("truetype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Aristotelica';
-  src: url("../fonts/Arista-Pro-Alternate-Light-trial.ttf") format("truetype");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Aristotelica';
-  src: url("../fonts/Arista-Pro-Alternate-Bold-trial.ttf") format("truetype");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'Arista';
-  src: url("../fonts/Arista-Pro-Light-trial.ttf") format("truetype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Arista';
-  src: url("../fonts/Arista-Pro-Bold-trial.ttf") format("truetype");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Arista';
-  src: url("../fonts/Arista-Pro-Fat-trial.ttf") format("truetype");
-  font-weight: 800;
-}
-
-@font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-Thin.ttf") format("truetype");
   font-weight: 400;
@@ -69,6 +21,53 @@
   src: url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 800;
 }
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-Light.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-SemiBold.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 html,body{
   box-sizing: border-box;
@@ -152,11 +151,11 @@ a:hover{
  position: absolute;
  top: 0;
  left: 0;
- background-color: #1C1421;
+ background-color: #000F07;
  width: 290px;
  height: 100vh;
  -webkit-transform: translateX(-100%);
-         transform: translateX(-100%);
+ transform: translateX(-100%);
  -webkit-transition: all linear 0.3s;
  transition: all linear 0.3s;
 }
@@ -173,10 +172,10 @@ a:hover{
  display: -ms-flexbox;
  display: flex;
  -webkit-box-align: center;
-     -ms-flex-align: center;
-         align-items: center;
+ -ms-flex-align: center;
+ align-items: center;
  padding: 12px 0 12px 18px;
- border-top: 1px solid rgba(221, 221, 221, 0.228);
+ border-top: 1px solid rgb(221 221 221 / 7%);
 }
 
 .soft-menu__item a {
@@ -223,8 +222,8 @@ a:hover{
    width: 100%;
    height: 50px;
    background-color: #000F07;
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-   z-index: 1000;
+   box-shadow: rgb(159 159 190 / 25%) 0px 2px 5px -1px, rgb(146 142 142 / 30%) 0px 1px 3px -1px;
+   z-index: 99;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -275,11 +274,11 @@ a:hover{
  height: 100vh;
  width: 100vw;
  background-color: #000F07;
- z-index: 10;
+ z-index: 999;
 }
 
 .primary-button{
- font-family: 'Aristotelica';
+ font-family: 'Space Grotesk';
  font-weight: 800;
 
  display: inline-flex;
@@ -295,7 +294,7 @@ a:hover{
 
 .primary-button:hover{
  cursor: pointer;
- letter-spacing: 1px;
+ /* letter-spacing: 1px; */
  background-image: linear-gradient(45deg, #03C75E 0%, #036630 33%, #036630 100%);
 }
 
@@ -334,7 +333,7 @@ a:hover{
  font-weight: 800;
  font-size: 24px;
  text-transform: capitalize;
- font-family: 'Aristotelica';
+ font-family: 'Space Grotesk';
 }
 
 .primary-title-line{

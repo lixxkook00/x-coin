@@ -66,7 +66,7 @@ let animationWorkFlow = false;
 
 document.addEventListener('scroll', function() {
 
-  if(bind1("#workflow").getBoundingClientRect().top < 200 && !animationWorkFlow){
+  if(bind1("#about").getBoundingClientRect().top < 200 && !animationWorkFlow){
     bind1('#workflow-img').classList.add('active')
     animationWorkFlow = true
   }

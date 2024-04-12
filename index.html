@@ -36,7 +36,7 @@
 
 <body>
     <!-- HEADER MOBILE -->
-    <div class="header-mobile hide-on-pc">
+    <div class="header-mobile hide-on-pc justify-content-between">
         <img class="header-mobile-logo" src="./assets/images/logo-text.png" alt="">
         <div class="header-mobile-left">
             <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
@@ -50,29 +50,35 @@
         <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
             <li class="soft-menu__item soft-menu__item--active">
                 <a class="" href="#about">
-                    <i class="fa-solid fa-house"></i> HOME
+                    <i class="fa-solid fa-house"></i> About
                 </a>
             </li>
             <li class="soft-menu__item hehe">
-                <a class="" href="#product">
-                    <i class="fa-solid fa-book"></i> WHITEPAPER
+                <a class="" href="#nft">
+                    <i class="fa-solid fa-book"></i> NFTs
                 </a>
             </li>
             <li class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#tutorial">
-                    <i class="fa-solid fa-store"></i> SHOP
+                <a class="" href="#team">
+                    <i class="fa-solid fa-store"></i> Team
                 </a>
             </li>
 
             <li class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="">
-                    <i class="fa-brands fa-wpexplorer"></i> EXPLORE
+                <a class="" href="#question">
+                    <i class="fa-brands fa-wpexplorer"></i> What we do
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#question">
+                    <i class="fa-brands fa-wpexplorer"></i> Contact
                 </a>
             </li>
 
             <div class="soft-menu__item soft-menu__item-sub">
-                <a class="ref-link" href="">
-                    <i class="fa-solid fa-right-to-bracket"></i> SIGN IN
+                <a class="ref-link" href="/login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
                 </a>
             </div>
         </ul>
@@ -86,21 +92,21 @@
             </a>
 
             <div class="header-nav d-flex">
-                <div class="header-nav-item centering">
-                    Product
-                </div>
-                <div class="header-nav-item centering">
-                    Networks
-                </div>
-                <div class="header-nav-item centering">
-                    Governance
-                </div>
-                <div class="header-nav-item centering">
-                    Developers
-                </div>
-                <div class="header-nav-item centering">
+                <a href="#about" class="header-nav-item centering">
                     About
-                </div>
+                </a>
+                <a href="#nft" class="header-nav-item centering">
+                    NFTs
+                </a>
+                <a href="#team" class="header-nav-item centering">
+                    Team
+                </a>
+                <a href="#question" class="header-nav-item centering">
+                    What we do
+                </a>
+                <a href="#contact" class="header-nav-item centering">
+                    Contact
+                </a>
 
                 <a href="/login.html" class="primary-button">
                     Login
@@ -178,7 +184,7 @@
     </section>
 
     <!-- About -->
-    <section id="workflow" class="workflow">
+    <section id="about" class="workflow">
         <div class="centering">
             <div class="primary-title">
                 ABOUT US
@@ -364,7 +370,7 @@
     </section>
 
     <!-- NFT-->
-    <section class="workflow">
+    <section id="nft" class="workflow">
         <div class="centering">
             <div class="primary-title">
                 NFTs
@@ -439,7 +445,7 @@
     </section>
 
     <!-- DEV TEAM -->
-    <section class="feedback">
+    <section id="team" class="feedback">
         <div class="container">
             <div class="centering">
                 <div class="primary-title">
@@ -696,9 +702,9 @@
     </section>
 
     <!-- WHAT WE DO -->
-    <section class="question">
+    <section id="question" class="question">
         <div class="centering">
-            <div class="primary-title">
+            <div class="primary-title mb-4">
                 WHAT WE DO
                 <div class="primary-title-line">
                     <img src="./assets/images/logo.png" alt="" class="primary-title-logo">
@@ -849,7 +855,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer id="contact" class="footer pt-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">

@@ -38,9 +38,10 @@
 }
 
 .feedback-item:hover{
-    background: url(../images/feedback-card-bg.png) no-repeat center center;
+    /* background: url(../images/feedback-card-bg.png) no-repeat center center; */
     background-size: cover;
     border: none;
+    background-image: linear-gradient(45deg, #036630 0%, #036630 33%, #03C75E 100%);
 }
 
 .question-img-wrapper{
