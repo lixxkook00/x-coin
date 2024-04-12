@@ -824,7 +824,7 @@ input:focus-visible{
 
 .primary-button{
     border: 1px solid #fff;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     /* width: 100%; */
     max-width: 400px;
@@ -912,6 +912,10 @@ input:focus-visible{
 
 .primary-box.pd-15 {
     padding: 15px;
+}
+
+.primary-box.p-10 {
+    padding: 10px;
 }
 
 .primary-box--black{
@@ -1252,8 +1256,12 @@ select:focus-visible{
 }
 
 .token-img{
-    width: 80px;
+    width: 70px;
     margin-bottom: 10px;
+}
+
+.token-infor .token-img {
+    margin-right: 10px;
 }
 
 .token-infor:first-child{
@@ -1540,6 +1548,7 @@ select:focus-visible{
 .nav-mobile-item-title {
     font-size: 12px;
     margin-top: 2px;
+    font-family: 'Space Grotesk';
 }
 
 .card-icon-xl {
