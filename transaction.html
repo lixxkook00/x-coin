@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-6">
-                    <a href="#todeposit" class="primary-box primary-box--black d-flex flex-column primary-box--gradient">
+                    <div data-toggle="modal" data-target="#withdrawModal" class="primary-box primary-box-cursor primary-box--black d-flex flex-column primary-box--gradient">
                         <div class="d-flex flex-column align-items-center">
                             <div class="symbol symbol-40px me-3">
                                 <div class="card-icon card-icon-xl">
@@ -98,10 +98,10 @@
                                 <div class="dashboard-title">Withdraw</div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-6">
-                    <a href="#todeposit" class="primary-box primary-box--black d-flex flex-column primary-box--gradient">
+                    <div data-toggle="modal" data-target="#swapModal" class="primary-box primary-box-cursor primary-box--black d-flex flex-column primary-box--gradient">
                         <div class="d-flex flex-column align-items-center">
                             <div class="symbol symbol-40px me-3">
                                 <div class="card-icon card-icon-xl">
@@ -112,10 +112,10 @@
                                 <div class="dashboard-title">Swap</div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-6">
-                    <a href="#todeposit" class="primary-box primary-box--black d-flex flex-column primary-box--gradient">
+                    <div data-toggle="modal" data-target="#transferModal" class="primary-box primary-box-cursor primary-box--black d-flex flex-column primary-box--gradient">
                         <div class="d-flex flex-column align-items-center">
                             <div class="symbol symbol-40px me-3">
                                 <div class="card-icon card-icon-xl">
@@ -126,7 +126,7 @@
                                 <div class="dashboard-title">Tranfer</div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
 
@@ -180,7 +180,7 @@
                         </div>
                         
                         <div class="centering mt-4">
-                            <button type="submit" class="primary-button text-white">Deposit</button>
+                            <button type="submit" class="primary-button text-white" data-toggle="modal" data-target="#depositModal">Deposit</button>
                         </div>
                     </div>
                 </div>
@@ -281,6 +281,210 @@
                                 <a class="primary-button" >Copy Address</a>
                             </div>
                         </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Withdraw Modal -->
+    <div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="primary-modal">
+                 <div class="primary-modal-header">
+                    <div class="primary-modal-title">
+                        Withdraw
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                 </div>
+                 <div class="primary-modal-content">
+                    <div class="card-body p-9">
+                        <div class="modal-dialog-value text-center">
+                            2,790.00 XCO
+                        </div>
+                        <div class="fs-4 fw-semibold mb-7 text-center primary-text ">Available Balance</div>
+                    </div>
+
+                    <div id="form_withdraw_popup">
+                        <form method="post" novalidate="novalidate" autocomplete="off" id="formPayout">
+                            <input type="hidden" name="txtCurrency" value="XCO">
+                            <input type="hidden" name="token" value="a9dc3b38-0896-4a7a-ad4b-45cca2b11125">
+                            <step data="1" >
+                                <div class="fv-row">
+                                    <label class="form-label fw-semibold fs-6 mb-1 position-relative" style="width: 100%;">
+                                        Amount
+                                        <a class="primary-text pointer" style="position:absolute; right: 10px;" onclick="$('#amount').val('0')">Max</a>
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="primary-modal-input w-100" placeholder="Minimum 100 XCO" name="txtAmount" id="amount" required="" type="number" step="any">
+                                        <small class="form-text primary-text " style="font-size: 10px">Fee 2%</small>
+                                    </div>
+                                </div>
+                                <div class="fv-row">
+                                    <label class="form-label fw-semibold fs-6 mb-2">
+                                        Select Coin
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <select class="primary-modal-input w-100">
+                                            <option value="XCO">XCO</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="fv-row" id="wrap_input_blockchain">
+                                    <label for="formrow-firstname-input" class="form-label">Choose Network</label>
+                                    <div class="position-relative mb-3">
+                                        <select class="primary-modal-input w-100" name="txtChain">
+                                            <option value="BSC">Binance Smart Chain (BEP20)</option>
+                                        </select>
+                                        <small class="form-text primary-text " style="font-size: 10px">Please make sure the network matches, otherwise assets may be lost.</small>
+                                    </div>
+                                </div>
+                                <div class="fv-row mt-3">
+                                    <label class="form-label fw-semibold fs-6 mb-2">
+                                        To Address
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="primary-modal-input w-100" placeholder="Please enter address" data-msg-required="Please enter wallet address" id="address" maxlength="100" name="txtAddress" required="">
+                                    </div>
+                                </div>
+                    
+                                <div class="centering mt-4">
+                                    <button type="submit" class="primary-button w-100">Submit</button>
+                                </div>
+                            </step>
+                        </form>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swap Modal -->
+    <div class="modal fade" id="swapModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="primary-modal">
+                 <div class="primary-modal-header">
+                    <div class="primary-modal-title">
+                        Swap To USD
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                 </div>
+                 <div class="primary-modal-content">
+                    <div class="card-body p-9">
+                        <div class="modal-dialog-value text-center">
+                            2,790.00 XCO
+                        </div>
+                        <div class="fs-4 fw-semibold mb-7 text-center primary-text ">Available Balance</div>
+                    </div>
+
+                    <div id="form_withdraw_popup">
+                        <form method="post" novalidate="novalidate" autocomplete="off" id="formPayout">
+                            <input type="hidden" name="txtCurrency" value="XCO">
+                            <input type="hidden" name="token" value="a9dc3b38-0896-4a7a-ad4b-45cca2b11125">
+                            <step data="1" >
+                                <div class="fv-row">
+                                    <label class="form-label fw-semibold fs-6 mb-1 position-relative" style="width: 100%;">
+                                        From wallet
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="primary-modal-input w-100" value="XCO" name="txtAmount" id="amount" required="" type="number" step="any">
+                                    </div>
+                                </div>
+                                <div class="fv-row">
+                                    <label class="form-label fw-semibold fs-6 mb-1 position-relative" style="width: 100%;">
+                                        To wallet
+                                        <a class="primary-text pointer" style="position:absolute; right: 10px;" value="USDT" onclick="$('#amount').val('0')">Max</a>
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="primary-modal-input w-100" name="txtAmount" id="amount" required="" type="number" step="any">
+                                    </div>
+                                </div>
+                                <div class="fv-row">
+                                    <label class="form-label fw-semibold fs-6 mb-1 position-relative" style="width: 100%;">
+                                        Amount
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="primary-modal-input w-100" placeholder="Please enter amount" name="txtAmount" id="amount" required="" type="number" step="any">
+                                    </div>
+                                </div>
+                                <div class="fv-row">
+                                    <label class="form-label fw-semibold fs-6 mb-1 position-relative" style="width: 100%;">
+                                        Estimate received
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="primary-modal-input w-100" placeholder="" name="txtAmount" id="amount" required="" type="number" step="any">
+                                    </div>
+                                </div>
+                    
+                                <div class="centering mt-4">
+                                    <button type="submit" class="primary-button w-100">Submit</button>
+                                </div>
+                            </step>
+                        </form>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transfer Modal -->
+    <div class="modal fade" id="transferModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="primary-modal">
+                 <div class="primary-modal-header">
+                    <div class="primary-modal-title">
+                        Deposit XCO
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                 </div>
+                 <div class="primary-modal-content">
+                    <div class="card-body p-9">
+                        <div class="modal-dialog-value text-center">
+                            2,790.00 XCO
+                        </div>
+                        <div class="fs-4 fw-semibold mb-7 text-center primary-text ">Available Balance</div>
+                    </div>
+
+                    <div id="form_withdraw_popup">
+                        <form method="post" novalidate="novalidate" autocomplete="off" id="formPayout">
+                            <input type="hidden" name="txtCurrency" value="XCO">
+                            <input type="hidden" name="token" value="a9dc3b38-0896-4a7a-ad4b-45cca2b11125">
+                            <step data="1" >
+                                <div class="fv-row">
+                                    <label class="form-label fw-semibold fs-6 mb-1 position-relative" style="width: 100%;">
+                                        Amount
+                                        <a class="primary-text pointer" style="position:absolute; right: 10px;" value="USDT" onclick="$('#amount').val('0')">Max</a>
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="primary-modal-input w-100" placeholder="Please enter amount (XCO)" name="txtAmount" id="amount" required="" type="number" step="any">
+                                    </div>
+                                </div>
+                                <div class="fv-row">
+                                    <label class="form-label fw-semibold fs-6 mb-1 position-relative" style="width: 100%;">
+                                        Receiver
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="primary-modal-input w-100" placeholder="Please enter the recipient" name="txtAmount" id="amount" required="" type="number" step="any">
+                                    </div>
+                                </div>
+                    
+                                <div class="centering mt-4">
+                                    <button type="submit" class="primary-button w-100">Submit</button>
+                                </div>
+                            </step>
+                        </form>
                     </div>
                  </div>
                 </div>

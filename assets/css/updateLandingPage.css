@@ -1,95 +1,22 @@
-.intro-infor{
-    padding: 10px 0;
-    background-color: #002b14;
-}
-
-.intro-main {
-    height: calc(100% - 74px);
-}
-
-.intro-wrapper{
-    padding-bottom: 0;
-}
-
-.pack{
-    background-color: #000F07;
-    color: #fff;
-}
-
-.pack-card{
-    border: 1px solid #fff;
-}
-
-.workflow-img-wrapper {
-    width: 27vw;
-}
-
-.workflow-img-wrapper.active .workflow-img-tag--1 {
-    width: 5vw;
-    top: -1vw;
-    right: 4.3vw;
-}
-
-.workflow-img-wrapper.active .workflow-img-tag--3 {
-    width: 9vw;
-    bottom: 11vw;
-    right: -4vw;
-    animation-delay: 1.2s;
-}
-
-.feedback-item:hover{
-    /* background: url(../images/feedback-card-bg.png) no-repeat center center; */
-    background-size: cover;
-    border: none;
-    background-image: linear-gradient(45deg, #036630 0%, #036630 33%, #03C75E 100%);
-}
-
-.question-img-wrapper{
-    width: 100% !important;
-    max-width: 500px;
-    height: auto !important;
-}
-
-.feedback-item{
-    margin: 0;
-}
-
-.chart-bg{
-    background: url(../images/chart-bg.png) no-repeat top center;
-    background-size: contain;
-}
-
-.chart-img{
-    margin-top: 10vh;
-}
-
-/* Mobile & Tablet */
+.intro-infor { padding: 10px 0px; background-color: rgb(0, 43, 20); }
+.intro-main { height: calc(100% - 74px); }
+.intro-wrapper { padding-bottom: 0px; }
+.pack { background-color: rgb(0, 15, 7); color: rgb(255, 255, 255); }
+.pack-card { border: 1px solid rgb(255, 255, 255); }
+.workflow-img-wrapper { width: 27vw; }
+.workflow-img-wrapper.active .workflow-img-tag--1 { width: 5vw; top: -1vw; right: 4.3vw; }
+.workflow-img-wrapper.active .workflow-img-tag--3 { width: 9vw; bottom: 11vw; right: -4vw; animation-delay: 1.2s; }
+.feedback-item:hover { background-size: cover; border: none; background-image: linear-gradient(45deg, rgb(3, 102, 48) 0%, rgb(3, 102, 48) 33%, rgb(3, 199, 94) 100%); }
+.question-img-wrapper { max-width: 500px; width: 100% !important; height: auto !important; }
+.feedback-item {margin: 0px;background-color: #061106ab;}
+.chart-bg { background: url("../images/chart-bg.png") center top / contain no-repeat; }
+.chart-img { margin-top: 10vh; }
 @media (max-width: 1023px) {
-    .pack-desc{
-        width: 100%;
-    }
-
-    .workflow-img-wrapper {
-        width: 65vw !important;
-    }
-
-    .feedback-item{
-        margin-bottom: 10px;
-    }
-
-    .workflow-img{
-        margin-bottom: 10px;
-    }
-
-    .feedback{
-        padding-top: 0; 
-    }
-
-    .chart-img{
-        margin-top: 0;
-    }
-
-    .intro-main{
-        height: calc(100% - 74px);
-    }
+  .pack-desc { width: 100%; }
+  .workflow-img-wrapper { width: 65vw !important; }
+  .feedback-item { margin-bottom: 10px; }
+  .workflow-img { margin-bottom: 10px; }
+  .feedback { padding-top: 0px; }
+  .chart-img { margin-top: 0px; }
+  .intro-main { height: calc(100% - 74px); }
 }
