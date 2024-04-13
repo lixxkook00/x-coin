@@ -1572,17 +1572,14 @@ select:focus-visible{
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-
     display: flex;
     flex-direction: column;
-
     padding: 10px;
     margin-bottom: 10px;
-
     background-color: #141B22;
     border: 1px solid #21e78786;
-
     /* border-radius: 10px; */
+    box-shadow: #03ff75 0px 0px 5px;
 }
 
 .nft-card:hover {
@@ -1739,6 +1736,10 @@ select {
 .primary-button-sm {
     padding: 4px 6px;
     font-size: 16px;
+}
+
+.header .primary-button {
+    padding: 6px 15px;
 }
 
 
