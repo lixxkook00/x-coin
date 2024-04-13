@@ -874,7 +874,7 @@ input:focus-visible{
     min-height: calc(100vh - 41px);
     padding-top: 80px;
     padding-bottom: 10px;
-    background-color: #E0E8F3;
+    /* background-color: #E0E8F3; */
 }
 
 .header-dashboard .header-nav-item {
@@ -1522,7 +1522,7 @@ select:focus-visible{
 
 .nav-mobile {
     position: fixed;
-    bottom: 0;
+    bottom: -0.5px;
     left: 0;
     width: 100vw;
     display: flex;
