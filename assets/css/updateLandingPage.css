@@ -1,4 +1,4 @@
-.intro-infor { padding: 10px 0px; background-color: rgb(0, 43, 20); }
+.intro-infor {padding: 10px 0px;background-color: rgb(0, 43, 20);position: absolute;left: 0;width: 100vw;bottom: 0;}
 .intro-main { height: calc(100% - 74px); }
 .intro-wrapper { padding-bottom: 0px; }
 .pack { background-color: rgb(0, 15, 7); color: rgb(255, 255, 255); }
