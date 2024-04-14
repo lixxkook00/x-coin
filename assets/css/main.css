@@ -1777,6 +1777,11 @@ select {
     position: relative;
 }
 
+.intro-login a:hover,
+.dashboard-bg a:hover {
+    color: #00AB00;
+}
+
 
 
 
