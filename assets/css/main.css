@@ -1469,11 +1469,12 @@ select:focus-visible{
     display: block;
     width: 100%;
     padding: 0.775rem 1rem;
+    backdrop-filter: blur(1px);
     font-size: 1.1rem;
     font-weight: 600;
     line-height: 1.5;
     color: #00AB00;
-    background-color: #ffffff2b;
+    background-color: #ffffff00;
     background-clip: padding-box;
     border: 1px solid #e4e6ef;
     appearance: none;
@@ -1706,6 +1707,7 @@ select {
     flex: 1;
     color: #ffffff;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .modal-dialog-value {
@@ -1753,9 +1755,26 @@ select {
     pointer-events: none;
 }
 
+#earth::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000045;
+}
+
 .intro-infor,
 .intro-content {
     z-index: 9999 !important;
+}
+
+.intro-bg-login {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
 }
 
 

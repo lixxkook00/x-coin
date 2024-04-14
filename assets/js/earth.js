@@ -43,14 +43,14 @@ let pushShift = () => {
     Math.random() * 0.9 + 0.1
   );
 }
-let pts = new Array(12000).fill().map(p => {
+let pts = new Array(isDesktop ? 10000 : 2500).fill().map(p => {
   sizes.push(Math.random() * 1.5 + 0.5);
   pushShift();
   return new THREE.Vector3().randomDirection().multiplyScalar(Math.random() * 0.5 + 9.5);
 })
 
-
-for(let i = 0; i < 8000; i++){
+const quantity = isDesktop ? 8000 : 2000
+for(let i = 0; i < quantity; i++){
   let r = 10, R = 40;
   let rand = Math.pow(Math.random(), 1.5);
   let radius = Math.sqrt(R * R * rand + (1 - rand) * r * r);
